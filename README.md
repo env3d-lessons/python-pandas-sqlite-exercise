@@ -70,6 +70,9 @@ comedies = genre_df[ genre_df['genre'] == 'Comedy' ]['Movie_id']
 top_world_comedies = earning_df[ earning_df['Movie_id'].isin(comedies) ].sort_values(by='Worldwide').tail()['Movie_id']
 imdb_df[ imdb_df['Movie_id'].isin(top_world_comedies) ]['Title']
 
+# Count how many movies in each genre
+genre_df.groupby('genre').count()
+
 ```
 
 
