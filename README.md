@@ -1,7 +1,5 @@
 Dataset is from https://www.kaggle.com/datasets/shahjhanalam/movie-data-analytics-dataset
 
-The sqlite file is stored in /home/jmadar/python_data/sqlite/movie.sqlite
-
 You can load the 3 tables in this database into python dataframes using the
 following code:
 
