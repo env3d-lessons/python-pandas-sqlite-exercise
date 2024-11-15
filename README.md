@@ -8,8 +8,8 @@ import pandas
 import numpy
 import sqlite3
 
-# You can directly access the database file from my directory
-conn = sqlite3.connect('/home/jmadar/python_data/sqlite/movie.sqlite')
+# You can directly access the database from codespaces
+conn = sqlite3.connect('movie.sqlite')
 
 genre_df = pandas.read_sql('select * from genre', conn)
 earning_df = pandas.read_sql('select * from earning', conn)
